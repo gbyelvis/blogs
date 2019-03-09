@@ -3,8 +3,8 @@ bg: "tag.jpg"
 layout: page
 permalink: /posts/
 title: "仲夏"
-crawlertitle: "All articles"
-summary: "Posts about jekyll"
+crawlertitle: "仲夏"
+summary: "Posts about summer-elvis"
 active: summer
 ---
 
