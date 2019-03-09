@@ -5,7 +5,7 @@ permalink: /posts/
 title: "素秋"
 crawlertitle: "All articles"
 summary: "Posts about jekyll"
-active: archive
+active: autumn
 ---
 
 {% for tag in site.tags %}
