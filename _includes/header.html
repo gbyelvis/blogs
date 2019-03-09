@@ -4,7 +4,7 @@
 
   <nav class="center-wrapper nav-main">
 
-    
+
 
     {% for my_page in site.pages %}
       {% if my_page.active == "winter"%}
@@ -15,7 +15,7 @@
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
       {% elsif my_page.active == "autumn"%}
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% else my_page.active %}
+      {% else my_page.active == "about" %}
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
       {% endif %}
     {% endfor %}
