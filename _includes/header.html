@@ -7,7 +7,15 @@
     <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     {% for my_page in site.pages %}
-      {% if my_page.active %}
+      {% if my_page.active1 %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% elsif my_page.active2 %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% elsif my_page.active3 %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% elsif my_page.active4 %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% else my_page.active %}
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
       {% endif %}
     {% endfor %}
