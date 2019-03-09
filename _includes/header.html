@@ -7,10 +7,25 @@
     <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     {% for my_page in site.pages %}
-      
+
+      {% assign val = my_page %}
+      {% case val %}
+        {% when 'winter' %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% when 'spring' %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% when 'summer' %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% when 'autumn' %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% when 'about' %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endcase %}
+      {% comment %}
       {% if my_page.active %}
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
       {% endif %}
+      {% endcomment %}
     {% endfor %}
 
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
