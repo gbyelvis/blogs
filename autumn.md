@@ -5,7 +5,7 @@ permalink: /posts/
 title: "素秋"
 crawlertitle: "素秋"
 summary: "Posts about autumn-elvis"
-active4: autumn
+active: autumn
 ---
 
 {% for tag in site.tags %}
