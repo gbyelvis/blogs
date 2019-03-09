@@ -1,5 +1,5 @@
 ---
-bg: "tag.jpg"
+bg: "owl.jpg"
 layout: page
 permalink: /posts/
 title: "仲夏"
