@@ -1,7 +1,7 @@
 ---
 bg: "tag.jpg"
 layout: page
-permalink: /posts/
+permalink: /posts/winter
 title: "冬日"
 crawlertitle: "冬日"
 summary: "Posts about winter-elvis"

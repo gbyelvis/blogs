@@ -1,7 +1,7 @@
 ---
 bg: "tools.jpg"
 layout: page
-permalink: /posts/
+permalink: /posts/spring
 title: "孟春"
 crawlertitle: "孟春"
 summary: "Posts about spring-elvis"

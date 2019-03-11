@@ -1,7 +1,7 @@
 ---
 bg: "tag.jpg"
 layout: page
-permalink: /posts/
+permalink: /posts/autumn
 title: "素秋"
 crawlertitle: "素秋"
 summary: "Posts about autumn-elvis"
