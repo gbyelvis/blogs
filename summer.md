@@ -14,7 +14,8 @@ active: summer
 
   <ul class="year">
     {% for post in posts %}
-      {% if post.tags contains "summer" %}
+      {% assign tagV = post.tags | upcase %}
+      {% if tagV contains "SUMMER" %}
         <h2 class="category-key" id="{{ post.title | downcase }}"><a href="{{ post.url | relative_url}}">{{ post.title | capitalize }}</a></h2>
         <li>
           {% if post.lastmod %}

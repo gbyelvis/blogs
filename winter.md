@@ -13,7 +13,8 @@ active: winter
 
   <ul class="year">
     {% for post in posts %}
-      {% if post.tags contains "winter" %}
+      {% assign tagV = post.tags | upcase %}
+      {% if tagV contains "WINTER" %}
         <h2 class="category-key" id="{{ post.title | downcase }}"><a href="{{ post.url | relative_url}}">{{ post.title | capitalize }}</a></h2>
         <li>
           {% if post.lastmod %}
