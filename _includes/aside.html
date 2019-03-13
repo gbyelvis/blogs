@@ -10,7 +10,10 @@
       <div class="heading">
 
         {% if page.tags %}
-          {% for tag in page.tags %}
+          <!-- show in heading, center of picture -->
+          <!-- by tags, or by title of each page -->
+          <!-- fetch value from attribution per page -->
+          {% for tag in page.title %}
             <a href="{{ site.baseurl }}/posts/#{{ tag | downcase }}">{{ tag | downcase }}</a>
           {% endfor %}
         {% else %}
